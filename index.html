@@ -2,8 +2,6 @@
 <html>
     <head>
               <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
-
-         
       
 <style>               
 .dropbtn {
@@ -81,13 +79,24 @@ iframe {
           width:400px;
           height:400px;
          }
-
+        
 
       </style>   
 
     </head>
            <body background="https://t2.ftcdn.net/jpg/00/83/37/31/240_F_83373142_Z7xixLqY484PbjU8TfHY5gv8DJYcBuGb.jpg">
 
+<div class="container">
+  <h3>MENU</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+  <br>
+  <p><strong>Note:</strong> This website shows how to learn code. It is not fully developed yet (you can't click on the links to display different content)</p>
+</div>
 
               
           <center> <h1>Empowering Girls</h1>
@@ -95,7 +104,23 @@ iframe {
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
                  
           <center> <h4>Coding can take you places in the world.</h4></center>
-          
+                 
+                  <img id="myImage" onclick="changeImage()"
+                  src="pic_bulboff.gif" width="1" height="18"
+                  src="pic_bulbon.gif" width="1" height="18">
+                 <p>Click the light bulb to turn on/off the light.</p>  
+
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("bulbon")) {
+        image.src = "pic_bulboff.gif";
+    } 
+    else {
+        image.src = "pic_bulbon.gif";
+    }
+}
+</script>                     
                        <br>
                   <div class="center">
                   <img class="img-circle" alt="code" src="http://www.shiftonelabs.com/blog/wp-content/uploads/2014/11/coding-future.jpg"></div>
