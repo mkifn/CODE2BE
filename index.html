@@ -105,7 +105,7 @@ iframe {
                  
           <center> <h4>Coding can take you places in the world.</h4></center>
                  
-                  <img id="http://i.imgur.com/WqNWNYs.gif" onclick="changeImage()"
+                  <img id="myImage" onclick="changeImage()"
                   src="http://i.imgur.com/WqNWNYs.gif" width="10" height="18"
                   src="http://i.imgur.com/5Gdmtj3.gif" width="10" height="18">
                  <p>Click the light bulb to turn on/off the light.</p>  
@@ -113,11 +113,10 @@ iframe {
 <script>
 function changeImage() {
     var image = document.getElementById('myImage');
-    if (image.src.match("http://i.imgur.com/5Gdmtj3.gif") {
-        image.src = "http://i.imgur.com/WqNWNYs.gif";
-    } 
-    else {
+    if (image.src.match("bulbon")) {
         image.src = "http://i.imgur.com/5Gdmtj3.gif";
+    } else {
+        image.src = "http://i.imgur.com/WqNWNYs.gif";
     }
 }
 </script>                     
